@@ -6,14 +6,16 @@ services:
     ports:
       - 25565:25565
     volumes:
-      - "D:/MC/wyy_docker/server:/data"
-      - "D:/MC/wyy_docker/resource/mods:/mods"
+      - "./server:/data"
+      - "./resource/mods:/mods"
+      - "./resource/world:/world"
     environment:
       EULA: "TRUE"
       VERSION: "1.18.2"
       TYPE: "FORGE"
       FORGE_INSTALLER: "forge-1.18.2-40.1.51-installer.jar"
       MODS: "/mods"
+      WORLD: "/world"
       DIFFICULTY: "hard"
       MAX_PLAYERS: "5"
       FORCE_GAMEMODE: "true"
@@ -24,7 +26,7 @@ services:
       ALLOW_FLIGHT: "true"
       SERVER_NAME: "DDServer"
       MOTD: "DDServer"
-      MEMORY: "8G"
+      MEMORY: "12G"
       # WHITELIST: ""
       OPS: "X_w_X"
       BROADCAST_CONSOLE_TO_OPS: "false"
