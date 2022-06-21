@@ -1,6 +1,19 @@
-version: "3"
+version: "3.1"
 
 services:
+  web:
+    image: itzg/rcon
+    environment:
+      RWA_USERNAME: admin
+      RWA_PASSWORD: admin
+      RWA_ADMIN: "TRUE"
+      # is referring to the hostname of 'mc' compose service below
+      RWA_RCON_HOST: forge
+      # needs to match the password configured for the container, which is 'minecraft' by default
+      RWA_RCON_PASSWORD: minecraft
+    ports:
+      - 25566:4326
+      - 25567:4327
   forge:
     image: itzg/minecraft-server:java17
     ports:
