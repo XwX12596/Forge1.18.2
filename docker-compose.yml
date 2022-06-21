@@ -1,0 +1,32 @@
+version: "3"
+
+services:
+  forge:
+    image: itzg/minecraft-server:java17
+    ports:
+      - 25565:25565
+    volumes:
+      - "D:/MC/wyy_docker/server:/data"
+      - "D:/MC/wyy_docker/resource/mods:/mods"
+    environment:
+      EULA: "TRUE"
+      VERSION: "1.18.2"
+      TYPE: "FORGE"
+      FORGE_INSTALLER: "forge-1.18.2-40.1.51-installer.jar"
+      MODS: "/mods"
+      DIFFICULTY: "hard"
+      MAX_PLAYERS: "5"
+      FORCE_GAMEMODE: "true"
+      HARDCORE: "false"
+      MODE: "survival"
+      PVP: "true"
+      ONLINE_MODE: "false"
+      ALLOW_FLIGHT: "true"
+      SERVER_NAME: "DDServer"
+      MOTD: "DDServer"
+      MEMORY: "8G"
+      # WHITELIST: ""
+      OPS: "X_w_X"
+      BROADCAST_CONSOLE_TO_OPS: "false"
+      BROADCAST_RCON_TO_OPS: "false"
+    restart: always

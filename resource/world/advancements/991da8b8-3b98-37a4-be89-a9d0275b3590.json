@@ -1,0 +1,40 @@
+{
+  "farmersdelight:main/root": {
+    "criteria": {
+      "seeds": "2022-06-21 10:40:50 +0000"
+    },
+    "done": true
+  },
+  "culturaldelights:pickle": {
+    "criteria": {
+      "pickle": "2022-06-21 10:40:50 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_by_something": "2022-06-21 10:40:33 +0000"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/farmersdelight/organic_compost_from_rotten_flesh": {
+    "criteria": {
+      "has_rotten_flesh": "2022-06-21 10:40:50 +0000"
+    },
+    "done": true
+  },
+  "mna:root": {
+    "criteria": {
+      "get_vinteum": "2022-06-21 10:40:50 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:snowy_plains": "2022-06-21 09:52:14 +0000",
+      "minecraft:snowy_taiga": "2022-06-21 09:50:49 +0000"
+    },
+    "done": false
+  },
+  "DataVersion": 2975
+}
